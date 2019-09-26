@@ -74,3 +74,43 @@ end
 
 ![](2019-09-24-00-30-12.png)
 
+### 螺旋
+
+```ruby
+n = 100
+
+turn_right 90
+
+pen_down
+
+(3..n).each do |i|
+  forward(Math::PI * 300 / n)
+  turn_left(360 / i)
+end
+```
+
+![](2019-09-24-08-57-27.png)
+
+### オウム貝
+
+```ruby
+n = 100
+j = 4
+
+turn_right 90
+
+pen_down
+
+(3..n).each do |i|
+  forward(Math::PI * 400 / n)
+  turn_left(360 / i)
+
+  j.times do
+    forward(Math::PI * i)
+    turn_left(360 / j)
+  end
+end
+```
+
+![](2019-09-24-09-16-18.png)
+
