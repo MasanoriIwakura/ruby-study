@@ -10,6 +10,14 @@ def fizz_buzz(num)
     end
 end
 
+def greeting
+    'Hello'
+end
+
 (1..20).each{|num|
     fizz_buzz(num)
 }
+
+g = greeting
+puts g
+puts g
